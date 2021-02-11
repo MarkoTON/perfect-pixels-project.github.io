@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 70px;
+  background: #ffebf2;
+  margin: 0 0 78px;
+  padding: 18px 151px 17px 150px;
+}
+
+nav a {
+  font-family: "Secular One", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05px;
+}
+
+section.lokacija {
+  background-image: url("../img/krivudava-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 337px;
+  margin-top: -148px;
+  padding-top: 148px;
+}
+
+section.lokacija .container h1 {
+  font-size: 55px;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+
+section.lokacija .container p {
+  padding-right: 23rem;
+}
+
+section.lokacija .container .paginacia {
+  padding-top: 1rem;
+  font-size: 12px;
+}
+
+section.lokacija .container .paginacia span {
+  font-family: "Varela Round", sans-serif;
+  color: #999999;
+}
+
+.card-location {
+  margin-top: 45px;
+}
+
+.card-location .card {
+  height: 420px;
+  border: none;
+  border-radius: none;
+  -webkit-box-shadow: 0 1px 9px 0 rgba(0, 35, 64, 0.2);
+          box-shadow: 0 1px 9px 0 rgba(0, 35, 64, 0.2);
+}
+
+.card-location .card .card-body {
+  margin: 0 70px 8px 23px;
+}
+
+.card-location .card .card-body .main-title {
+  width: 547px;
+  font-size: 22px;
+  border-bottom: solid 1.2px #e7e7e7;
+  letter-spacing: 0.07px;
+  margin-top: 15px;
+  padding-bottom: 8px;
+  font-family: "Secular One", sans-serif;
+}
+
+.card-location .card .card-body .main-title img {
+  padding-bottom: 5px;
+}
+
+.card-location .card .card-body .row {
+  padding-top: 8px;
+}
+
+.card-location .card .card-body .row .card-title {
+  font-size: 14px;
+}
+
+.card-location .card .card-body .row .card-text {
+  text-decoration: underline;
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05px;
+  margin-bottom: 0;
+}
+
+.card-location .card .card-body .row .card-text:nth-child(3) {
+  margin-bottom: 1rem;
+}
+
+.card-location .card .card-body .row .card-text:nth-child(4) {
+  text-decoration: none;
+}
+
+.card-location .card .card-body .row .dostupno span {
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: "Secular One", sans-serif;
+  letter-spacing: 0.04px;
+  margin-right: 4px;
+  margin-bottom: 9px;
+}
+
+.card-location .card .card-body .row .dostupno span:nth-child(2) {
+  background: #ffebf2;
+  padding: 3px 8px 1px 7px;
+}
+
+.card-location .card .card-body .row .dostupno span:nth-child(3) {
+  padding: 3px 6px 1px 7px;
+  background: #a3e8d6;
+}
+
+.card-location .card .card-body .row .dostupno span:nth-child(4) {
+  padding: 2px 7px 2px 6px;
+  background: #fcfa96;
+}
+
+.card-location .card .card-body .napomena {
+  margin-bottom: 26px;
+}
+
+.card-location .card .card-body .napomena .border-line-minus {
+  width: 373px;
+  height: 1px;
+  border-top: dashed 2px #dddddd;
+}
+
+.card-location .card .card-body .napomena .obavezno-porucivanje {
+  width: 188px;
+  height: 18px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 11px;
+  line-height: 1.64;
+  letter-spacing: 0.04px;
+  text-align: right;
+  color: #999999;
+}
+
+.card-location .card .card-body .slike-sa-lokacija .img-radnje {
+  margin-right: 8px;
+}
+
+.card-location .card .img-map-1 {
+  width: 420px;
+  height: 100%;
+  margin-left: -40px;
+  background-image: url("../img/lokacija-dorcol.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
