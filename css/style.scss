@@ -19,6 +19,14 @@ $colors: (
   @return map-get($colors, $color-name)
 };
 
+$desktop: 992px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 nav {
   height: 70px;
   background: color(bg-primary-light);
@@ -63,55 +71,59 @@ section.lokacija {
 }
 
 .card-location {
-  margin-top: 45px;
+  margin-top:45px;
   .card {
-    height: 420px;
     border: none;
     border-radius: none;
+    margin-bottom: 43px;
     box-shadow: 0 1px 9px 0 rgba(0, 35, 64, 0.2);
-
-    .card-body {
-      margin: 0 70px 8px 23px;
-      
-      .main-title {
-        // background: red;
+    
+    .contact-info {
+      padding-left: 42px;
+      padding-bottom: 33px;
+      padding-top: 38px;
+      padding-right: 42px;
+      .card-body {
         width: 547px;
-        font-size: 22px;
-        border-bottom: solid 1.2px #e7e7e7;
-        letter-spacing: 0.07px;
-        margin-top: 15px;
-        padding-bottom: 8px;
-        font-family: $primary-font;
+        margin: 0;
+        padding: 0;
+        .main-title {
+          font-size: 22px;
+          border-bottom: solid 1.2px #e7e7e7;
+          letter-spacing: 0.07px;
+          padding-bottom: 8px;
+          font-family: $primary-font;
+    
+          img {
+            padding-bottom: 5px;
+          }
+        }
+
+        .contact-informations {
+          margin-top: 8px;
+
+          .card-title {
+            font-size: 14px;
+          }
+
+          .card-text {
+            text-decoration: underline;
+            font-family: $secundary-font;
+            font-size: 14px;
+            line-height: 1.29;
+            letter-spacing: 0.05px;
+            margin-bottom: 0;
   
-        img {
-          padding-bottom: 5px;
-        }
-      }
-
-      .row {
-        padding-top: 8px;
-
-        .card-title {
-          font-size: 14px;
-        }
-
-        .card-text {
-          text-decoration: underline;
-          font-family: $secundary-font;
-          font-size: 14px;
-          line-height: 1.29;
-          letter-spacing: 0.05px;
-          margin-bottom: 0;
-
-          &:nth-child(3) {
-            margin-bottom: 1rem;
-          }
-
-          &:nth-child(4) {
-            text-decoration: none;
+            &:nth-child(3) {
+              margin-bottom: 1rem;
+            }
+  
+            &:nth-child(4) {
+              text-decoration: none;
+            }
           }
         }
-        
+
         .dostupno {
           span {
             display: inline-block;
@@ -139,43 +151,107 @@ section.lokacija {
           }
         }
 
-      }
-
-      .napomena {
-        margin-bottom: 26px;
-
-        .border-line-minus {
-          width: 373px;
-          height: 1px;
-          border-top: dashed 2px #dddddd;
+        .napomena {
+          margin-bottom: 26px;
+          margin-top: 14px;
+  
+          .border-line-minus {
+            width: 373px;
+            height: 1px;
+            border-top: dashed 2px #dddddd;
+          }
+  
+          .obavezno-porucivanje {
+            width: 188px;
+            height: 18px;
+            font-family: $secundary-font;
+            font-size: 11px;
+            line-height: 1.64;
+            letter-spacing: 0.04px;
+            text-align: right;
+            color: color(text-secundery);
+          }
         }
 
-        .obavezno-porucivanje {
-          width: 188px;
-          height: 18px;
-          font-family: $secundary-font;
-          font-size: 11px;
-          line-height: 1.64;
-          letter-spacing: 0.04px;
-          text-align: right;
-          color: color(text-secundery);
+        .slike-sa-lokacija {
+          .img-radnje {
+            margin-right: 1px;
+          }
         }
       }
 
-      .slike-sa-lokacija {
-        .img-radnje {
-          margin-right: 8px;
+      @media (max-width: 768px) {
+        .card-body {
+          width: 100%;
+
+          .napomena {
+            .border-line-minus {
+              width: 100%;
+            }
+          }
+
+          .slike-sa-lokacija {
+            .img-radnje {
+              margin-bottom: 1rem;
+            }
+          }
         }
       }
     }
-    
-    .img-map-1 {
+
+    .contact-map {
       width: 420px;
-      height: 100%;
-      margin-left: -40px;
-      background-image: url('../img/lokacija-dorcol.PNG');
-      background-repeat: no-repeat;
-      background-size: cover;
+      .img-map-1 {
+        width: 100%;
+        height: 420px;
+        background-image: url('../img/lokacija-dorcol.PNG');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
     }
+    @media (max-width: 991px) {
+      .contact-map {
+        width: 100%;
+        .img-map-1 {
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+.uskoro-nbg {
+  background-image: url('../img/pink-nbg-1.png');
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 100%;
+  height: 456px;
+
+  .krofna-na-zidu {
+    background-image: url('../img/krofne-na-zidu-1.png');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    width: 346px;
+    height: 354px;
+  }
+
+  .rodjendan-27 {
+    background-image: url('../img/rodjendan-27-1.png');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    margin-left: 27px;
+    width: 278px;
+    height: 346px;
+  }
+
+  .uskoro-text {
+    width: 341px;
+    height: 208px;
+    font-family: $primary-font;
+    font-size: 45px;
+    line-height: 1.22;
+    letter-spacing: 0.15px;
+    color: white;
   }
 }
