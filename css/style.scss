@@ -565,12 +565,6 @@ footer {
         }
       }
     }
-
-    @media (max-width: 768px) {
-      .footer-info-links {
-        padding-right: 0px;
-      }
-    }
   }
 
   .prijava-za-posao {
@@ -596,10 +590,6 @@ footer {
       color: white;
     }
 
-    @media (max-width: 1200px) {
-      display: block;
-      width: 100%;
-    }
   }
   
   .sva-prava-zadrzava {
@@ -610,10 +600,6 @@ footer {
     font-family: $secundary-font;
     font-size: 12px;
     color: #656565;
-
-    @media (max-width: 1200px) {
-      padding-top: 2rem;
-    }
   }
 
   .kriva-footer-1 {
@@ -663,12 +649,29 @@ footer {
   }
 
   @media (max-width: 768px) {
+    .footer-nav {
+      .footer-info-links {
+        padding-right: 0px;
+      }
+    }
+
     .footer-krofna {
       display: none;
     }
     
     .kriva-footer-2 {
       right: 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .prijava-za-posao {
+      display: block;
+      width: 100%;
+    }
+
+    .sva-prava-zadrzava {
+      padding-top: 2rem;
     }
   }
 }

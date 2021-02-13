@@ -583,12 +583,6 @@ footer .footer-nav .footer-info-links ul li a {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  footer .footer-nav .footer-info-links {
-    padding-right: 0px;
-  }
-}
-
 footer .prijava-za-posao {
   width: 189px;
 }
@@ -613,13 +607,6 @@ footer .prijava-za-posao button {
   color: white;
 }
 
-@media (max-width: 1200px) {
-  footer .prijava-za-posao {
-    display: block;
-    width: 100%;
-  }
-}
-
 footer .sva-prava-zadrzava {
   width: 547px;
   height: 17px;
@@ -628,12 +615,6 @@ footer .sva-prava-zadrzava {
   font-family: "Varela Round", sans-serif;
   font-size: 12px;
   color: #656565;
-}
-
-@media (max-width: 1200px) {
-  footer .sva-prava-zadrzava {
-    padding-top: 2rem;
-  }
 }
 
 footer .kriva-footer-1 {
@@ -681,11 +662,24 @@ footer .footer-krofna {
 }
 
 @media (max-width: 768px) {
+  footer .footer-nav .footer-info-links {
+    padding-right: 0px;
+  }
   footer .footer-krofna {
     display: none;
   }
   footer .kriva-footer-2 {
     right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer .prijava-za-posao {
+    display: block;
+    width: 100%;
+  }
+  footer .sva-prava-zadrzava {
+    padding-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
