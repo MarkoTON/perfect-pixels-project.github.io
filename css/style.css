@@ -21,20 +21,51 @@ nav.navbar a {
   font-family: "Secular One", sans-serif;
   font-size: 15px;
   letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+
+nav.navbar .shopping-icon {
+  padding-top: 1rem;
+  font-family: "Secular One", sans-serif;
+}
+
+nav.navbar .shopping-icon a {
+  text-decoration: none;
+  color: black;
+}
+
+nav.navbar .shopping-icon a:first-child {
+  color: #f650a0;
+}
+
+nav.navbar .shopping-icon i {
+  padding-left: 19px;
+}
+
+nav.navbar .shopping-icon i span {
+  font-family: "Secular One", sans-serif;
+  color: #f650a0;
 }
 
 @media (max-width: 576px) {
   nav.navbar .logo-nav {
     padding-left: 1rem;
   }
-  nav.navbar button {
+  nav.navbar .shopping-icon {
     margin-right: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   nav.navbar {
-    padding: 18px 0px 17px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav.navbar {
+    padding: 0.5rem 0px 17px 0px;
   }
 }
 
@@ -54,7 +85,7 @@ section.lokacija .container h1 {
 }
 
 section.lokacija .container p {
-  padding-right: 23rem;
+  padding-right: 24rem;
 }
 
 section.lokacija .container .paginacia {
@@ -303,6 +334,9 @@ section.lokacija .container .paginacia span {
 }
 
 @media (max-width: 1024px) {
+  .uskoro-nbg .uskoro-text {
+    padding-top: 1.5rem;
+  }
   .uskoro-nbg .krofna-na-zidu {
     display: none;
   }
@@ -384,6 +418,10 @@ section.lokacija .container .paginacia span {
   padding-left: 30px;
 }
 
+.nagrade-informacije .info-top .podrzali h4 {
+  padding-bottom: 45px;
+}
+
 .nagrade-informacije .info-top .podrzali .box-1 {
   width: 114px;
 }
@@ -446,7 +484,11 @@ section.lokacija .container .paginacia span {
 }
 
 .nagrade-informacije .info-bottom .ketering h4 {
-  padding-bottom: 12px;
+  padding-bottom: 4px;
+}
+
+.nagrade-informacije .info-bottom .ketering p {
+  margin-bottom: 8px;
 }
 
 .nagrade-informacije .info-bottom .ketering button {
@@ -555,6 +597,7 @@ footer .prijava-za-posao h5 {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   color: #f650a0;
+  margin-bottom: 1rem;
 }
 
 footer .prijava-za-posao button {

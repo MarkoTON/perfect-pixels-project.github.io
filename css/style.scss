@@ -37,14 +37,34 @@ nav.navbar {
   .main-nav {
     background-color: rgba(color(bg-primary-light), 0.95);
     padding: 1rem;
-
-    // border-bottom: 1px solid color(text-pink);
   }
 
   a {
     font-family: $primary-font;
     font-size: 15px;
     letter-spacing: 0.05px;
+    text-transform: uppercase;
+  }
+
+  .shopping-icon {
+    padding-top: 1rem;
+    font-family: $primary-font;
+    a {
+      text-decoration: none;
+      color:black;
+
+      &:first-child {
+        color: color(text-pink)
+      }
+    }
+
+    i {
+      padding-left: 19px;
+      span {
+        font-family: $primary-font;
+        color: color(text-pink)
+      }
+    }
   }
 
   @media (max-width: 576px) {
@@ -52,13 +72,18 @@ nav.navbar {
       padding-left: 1rem;
     }
 
-    button {
+    .shopping-icon {
       margin-right: 1rem;
     }
   }
 
   @media (max-width: 768px) {
-    padding: 18px 0px 17px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 0.5rem 0px 17px 0px;
   }
 };
 
@@ -78,7 +103,7 @@ section.lokacija {
     }
     
     p {
-      padding-right: 23rem;
+      padding-right: 24rem;
     }
 
     .paginacia {
@@ -327,6 +352,10 @@ section.lokacija {
   }
 
   @media (max-width: 1024px) {
+    .uskoro-text {
+      padding-top: 1.5rem;
+    }
+
     .krofna-na-zidu {
       display: none;
     }
@@ -405,6 +434,10 @@ section.lokacija {
     .podrzali {
       padding-left: 30px;
 
+      h4 {
+        padding-bottom: 45px;
+      }
+
       .box-1 { width: 114px;}
       .box-2 { width: 81px;}
       .box-3 { width: 109px;}
@@ -435,7 +468,11 @@ section.lokacija {
 
     .ketering {
       h4 {
-        padding-bottom: 12px;
+        padding-bottom: 4px;
+      }
+
+      p {
+        margin-bottom: 8px;
       }
 
       button {
@@ -546,6 +583,7 @@ footer {
       font-family: $secundary-font;
       font-size: 14px;
       color: color(text-pink);
+      margin-bottom: 1rem;
     }
 
     button {
