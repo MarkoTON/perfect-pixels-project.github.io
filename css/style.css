@@ -194,11 +194,13 @@ section.lokacija .container .paginacia span {
 }
 
 .uskoro-nbg {
+  width: 100%;
+  height: auto;
+  margin-top: 69px;
+  position: relative;
   background-image: url("../img/pink-nbg-1.png");
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
-  height: 456px;
 }
 
 .uskoro-nbg .krofna-na-zidu {
@@ -210,21 +212,90 @@ section.lokacija .container .paginacia span {
 }
 
 .uskoro-nbg .rodjendan-27 {
+  width: 278px;
+  height: 346px;
   background-image: url("../img/rodjendan-27-1.png");
   background-repeat: no-repeat;
   background-position: center center;
+  margin-top: 110px;
   margin-left: 27px;
-  width: 278px;
-  height: 346px;
+  margin-right: 68px;
 }
 
 .uskoro-nbg .uskoro-text {
   width: 341px;
   height: 208px;
+  margin-top: 121px;
   font-family: "Secular One", sans-serif;
   font-size: 45px;
   line-height: 1.22;
   letter-spacing: 0.15px;
   color: white;
+}
+
+@media (max-width: 1200px) {
+  .uskoro-nbg .krofna-na-zidu {
+    width: 304px;
+    height: 296px;
+  }
+  .uskoro-nbg .rodjendan-27 {
+    width: 273px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uskoro-nbg .krofna-na-zidu {
+    display: none;
+  }
+  .uskoro-nbg .rodjendan-27 {
+    display: none;
+  }
+}
+
+.slatkoteka-drugi-gradovi {
+  height: 376px;
+  background-image: url("../img/krivudava-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slatkoteka-drugi-gradovi h2 {
+  font-family: "Secular One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 0.12px;
+}
+
+.slatkoteka-drugi-gradovi p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 1.13;
+  letter-spacing: 0.05px;
+  color: #999999;
+}
+
+.slatkoteka-drugi-gradovi p a {
+  color: #f650a0;
+}
+
+.nagrade-informacije {
+  margin-top: 66px;
+}
+
+.nagrade-informacije .nagrade {
+  width: 200px;
+}
+
+.nagrade-informacije .nagrade h4 {
+  font-family: "Secular One", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.13px;
+}
+
+.nagrade-informacije .podrzali h4 {
+  font-family: "Secular One", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.13px;
 }
 /*# sourceMappingURL=style.css.map */

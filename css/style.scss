@@ -12,7 +12,8 @@ $colors: (
   bg-secundary-light: #a3e8d6,
   bg-yellow-light: #fcfa96,
   text-primary: #000,
-  text-secundery: #999999
+  text-secundery: #999999,
+  text-pink: #f650a0
 );
 
 @function color($color-name) {
@@ -222,11 +223,13 @@ section.lokacija {
 }
 
 .uskoro-nbg {
+  width: 100%;
+  height: auto;
+  margin-top: 69px;
+  position: relative;
   background-image: url('../img/pink-nbg-1.png');
   background-repeat: no-repeat;
   background-position: center center ;
-  width: 100%;
-  height: 456px;
 
   .krofna-na-zidu {
     background-image: url('../img/krofne-na-zidu-1.png');
@@ -237,21 +240,95 @@ section.lokacija {
   }
 
   .rodjendan-27 {
+    width: 278px;
+    height: 346px;
     background-image: url('../img/rodjendan-27-1.png');
     background-repeat: no-repeat;
     background-position: center center ;
+    margin-top: 110px;
     margin-left: 27px;
-    width: 278px;
-    height: 346px;
+    margin-right: 68px;
   }
 
   .uskoro-text {
     width: 341px;
     height: 208px;
+    margin-top: 121px;
     font-family: $primary-font;
     font-size: 45px;
     line-height: 1.22;
     letter-spacing: 0.15px;
     color: white;
+  }
+
+  @media (max-width: 1200px) {
+    .krofna-na-zidu {
+      width: 304px;
+      height: 296px;
+    }
+
+    .rodjendan-27 {
+      width: 273px;
+      height: 340px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .krofna-na-zidu {
+      display: none;
+    }
+  
+    .rodjendan-27 {
+      display: none;
+    }
+
+  }
+}
+
+.slatkoteka-drugi-gradovi {
+  height: 376px;
+  background-image: url('../img/krivudava-1.png');
+  background-repeat: no-repeat;
+  background-position:center center;
+
+  h2 {
+    font-family: $primary-font;
+    font-size: 35px;
+    letter-spacing: 0.12px;
+  }
+
+  p {
+    font-family: $secundary-font;
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 1.13;
+    letter-spacing: 0.05px;
+    color: color(text-secundery);
+
+    a {
+      color:color(text-pink);
+    }
+  }
+}
+
+.nagrade-informacije {
+  margin-top: 66px;
+  
+  .nagrade {
+    width:200px;
+
+    h4 {
+      font-family: $primary-font;
+      font-size: 18px;
+      letter-spacing: 0.13px;
+    }
+  }
+
+  .podrzali {
+    h4 {
+      font-family: $primary-font;
+      font-size: 18px;
+      letter-spacing: 0.13px;
+    }
   }
 }
