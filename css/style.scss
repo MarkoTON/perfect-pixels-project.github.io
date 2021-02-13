@@ -20,14 +20,6 @@ $colors: (
   @return map-get($colors, $color-name)
 };
 
-$desktop: 992px;
-
-@mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
-}
-
 nav.navbar {
   height: 70px;
   background: color(bg-primary-light);
@@ -280,7 +272,10 @@ section.lokacija {
       }
       
     }
-    @media (max-width: 991px) {
+  }
+
+  @media (max-width: 991px) {
+    .card {
       .contact-map {
         width: 100%;
         .img-map-1 {
@@ -289,7 +284,7 @@ section.lokacija {
       }
     }
   }
-
+  
   @media (max-width: 1024px) {
     margin-top:2.5rem;
     padding: 0 1rem;
@@ -334,7 +329,10 @@ section.lokacija {
     letter-spacing: 0.15px;
     color: white;
 
-    @media (max-width: 768px) {
+  }
+
+  @media (max-width: 768px) {
+    .uskoro-text {
       padding-top: 1.5rem;
     }
   }
@@ -569,7 +567,6 @@ footer {
     }
 
     @media (max-width: 768px) {
-      // padding-left: ;
       .footer-info-links {
         padding-right: 0px;
       }
