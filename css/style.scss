@@ -313,22 +313,83 @@ section.lokacija {
 
 .nagrade-informacije {
   margin-top: 66px;
+  margin-bottom: 41px;
+
+  .box {
+    background: #d8d8d8;
+    height: 42px;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
   
-  .nagrade {
-    width:200px;
+  .info-top {
+    padding-bottom: 57px;
 
     h4 {
       font-family: $primary-font;
       font-size: 18px;
       letter-spacing: 0.13px;
+      padding-bottom: 24px;
+      margin-bottom: 0px;
+    }
+
+    .nagrade {
+      width:200px;
+  
+      .top-50 {
+        padding-right: 19px;
+      }
+    }
+  
+    .podrzali {
+      .box-1 { width: 114px;}
+      .box-2 { width: 81px;}
+      .box-3 { width: 109px;}
+      .box-4 { width: 114px;}
+      .box-5 { width: 81px;}
+      .box-6 { width: 109px;}
+      .box-7 { width: 114px;}
+      .box-8 { width: 104px; }
     }
   }
 
-  .podrzali {
+  .info-bottom {
     h4 {
       font-family: $primary-font;
       font-size: 18px;
       letter-spacing: 0.13px;
+      padding-bottom: 24px;
+      margin-bottom: 0px;
+    }
+
+    .reference {
+      .box-9 { width: 121px;}
+      .box-10 { width: 85px;}
+      .box-11 { width: 121px;}
+      .box-12 { width: 85px;}
+      .box-13 { width: 64px; margin-right: 52px;}
+    }
+
+    .ketering {
+      h4 {
+        padding-bottom: 12px;
+      }
+
+      button {
+        width: 105px;
+        height: 30px;
+        padding: 5px 7px 5px 8px;
+        border-radius: 1.9px;
+        color: white;
+        border: none;
+        background-color: color(text-pink);
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: normal;
+      }
     }
   }
 }

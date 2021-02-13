@@ -281,21 +281,114 @@ section.lokacija .container .paginacia span {
 
 .nagrade-informacije {
   margin-top: 66px;
+  margin-bottom: 41px;
 }
 
-.nagrade-informacije .nagrade {
+.nagrade-informacije .box {
+  background: #d8d8d8;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.nagrade-informacije .box:last-child {
+  margin-right: 0px;
+}
+
+.nagrade-informacije .info-top {
+  padding-bottom: 57px;
+}
+
+.nagrade-informacije .info-top h4 {
+  font-family: "Secular One", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.13px;
+  padding-bottom: 24px;
+  margin-bottom: 0px;
+}
+
+.nagrade-informacije .info-top .nagrade {
   width: 200px;
 }
 
-.nagrade-informacije .nagrade h4 {
-  font-family: "Secular One", sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.13px;
+.nagrade-informacije .info-top .nagrade .top-50 {
+  padding-right: 19px;
 }
 
-.nagrade-informacije .podrzali h4 {
+.nagrade-informacije .info-top .podrzali .box-1 {
+  width: 114px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-2 {
+  width: 81px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-3 {
+  width: 109px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-4 {
+  width: 114px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-5 {
+  width: 81px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-6 {
+  width: 109px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-7 {
+  width: 114px;
+}
+
+.nagrade-informacije .info-top .podrzali .box-8 {
+  width: 104px;
+}
+
+.nagrade-informacije .info-bottom h4 {
   font-family: "Secular One", sans-serif;
   font-size: 18px;
   letter-spacing: 0.13px;
+  padding-bottom: 24px;
+  margin-bottom: 0px;
+}
+
+.nagrade-informacije .info-bottom .reference .box-9 {
+  width: 121px;
+}
+
+.nagrade-informacije .info-bottom .reference .box-10 {
+  width: 85px;
+}
+
+.nagrade-informacije .info-bottom .reference .box-11 {
+  width: 121px;
+}
+
+.nagrade-informacije .info-bottom .reference .box-12 {
+  width: 85px;
+}
+
+.nagrade-informacije .info-bottom .reference .box-13 {
+  width: 64px;
+  margin-right: 52px;
+}
+
+.nagrade-informacije .info-bottom .ketering h4 {
+  padding-bottom: 12px;
+}
+
+.nagrade-informacije .info-bottom .ketering button {
+  width: 105px;
+  height: 30px;
+  padding: 5px 7px 5px 8px;
+  border-radius: 1.9px;
+  color: white;
+  border: none;
+  background-color: #f650a0;
+  font-family: "Secular One", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
