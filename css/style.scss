@@ -28,16 +28,37 @@ $desktop: 992px;
     }
 }
 
-nav {
+nav.navbar {
   height: 70px;
   background: color(bg-primary-light);
   margin: 0 0 78px;
   padding: 18px 151px 17px 150px;
 
+  .main-nav {
+    background-color: rgba(color(bg-primary-light), 0.95);
+    padding: 1rem;
+
+    // border-bottom: 1px solid color(text-pink);
+  }
+
   a {
     font-family: $primary-font;
     font-size: 15px;
     letter-spacing: 0.05px;
+  }
+
+  @media (max-width: 576px) {
+    .logo-nav {
+      padding-left: 1rem;
+    }
+
+    button {
+      margin-right: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 18px 0px 17px 0px;
   }
 };
 
@@ -68,6 +89,29 @@ section.lokacija {
         color: color(text-secundery);
       }
     }
+  }
+
+  @media (max-width: 576px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding-top: 6rem;
+    }
+  }
+
+  @media (max-width: 1024px){
+    .container {
+      p {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  @media (min-width: 1441px) {
+    background-position: center center ;
   }
 }
 
@@ -220,6 +264,11 @@ section.lokacija {
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    margin-top:2.5rem;
+    padding: 0 1rem;
+  }
 }
 
 .uskoro-nbg {
@@ -253,12 +302,16 @@ section.lokacija {
   .uskoro-text {
     width: 341px;
     height: 208px;
-    margin-top: 121px;
+    padding-top: 121px;
     font-family: $primary-font;
     font-size: 45px;
     line-height: 1.22;
     letter-spacing: 0.15px;
     color: white;
+
+    @media (max-width: 768px) {
+      padding-top: 1.5rem;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -309,6 +362,10 @@ section.lokacija {
       color:color(text-pink);
     }
   }
+
+  @media (max-width: 576px){
+    padding: 0 1rem;
+  }
 }
 
 .nagrade-informacije {
@@ -319,6 +376,7 @@ section.lokacija {
     background: #d8d8d8;
     height: 42px;
     margin-right: 12px;
+    margin-bottom: 12px;
 
     &:last-child {
       margin-right: 0px;
@@ -327,6 +385,7 @@ section.lokacija {
   
   .info-top {
     padding-bottom: 57px;
+    width: 200px;
 
     h4 {
       font-family: $primary-font;
@@ -337,14 +396,15 @@ section.lokacija {
     }
 
     .nagrade {
-      width:200px;
-  
+      min-width: 200px;
       .top-50 {
         padding-right: 19px;
       }
     }
   
     .podrzali {
+      padding-left: 30px;
+
       .box-1 { width: 114px;}
       .box-2 { width: 81px;}
       .box-3 { width: 109px;}
@@ -392,8 +452,188 @@ section.lokacija {
       }
     }
   }
+
+  @media (max-width: 576px) {
+    padding: 0 1rem;
+
+    .info-top {
+      flex-direction: column;
+
+      .podrzali {
+        padding-left: 0px;
+        padding-top: 1.5rem;
+      }
+    }
+
+    .info-bottom {
+      flex-direction: column;
+    }
+  }
 }
 
 footer {
+  display: flex;
+  z-index: 1;
   background-color: color(bg-primary-light);
+  position: relative;
+  padding-top: 67px;
+
+  .logo-footer {
+    width: 272px;
+    img {
+      width: 176px;
+      height: 48px;
+    }
+    p {
+      font-family: $secundary-font;
+      font-size: 14px;
+      margin-bottom: 0px;
+      padding: 17px 0px;
+    }
+
+    .drustvene-mreze {
+      a {
+        padding-right: 20px;
+
+        &:last-child {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    padding-left: 61px;
+    ul {
+      li {
+        
+        a {
+          font-family: $secundary-font;
+          font-size: 15px;
+          color: color(text-primary);
+          letter-spacing: 0.05px;
+          margin-bottom: 0;
+          padding: 0px;
+          padding-bottom: 8px;
+        }
+      }
+    }
+
+    .footer-info-links {
+      padding-left: 52px;
+      padding-right: 80px;
+      ul {
+        li {
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      // padding-left: ;
+      .footer-info-links {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .prijava-za-posao {
+    width: 189px;
+
+    h5 {
+      font-family: $secundary-font;
+      font-size: 14px;
+      color: color(text-pink);
+    }
+
+    button {
+      width: 152px;
+      height: 30px;    
+      padding: 5px 6px 5px 7px;
+      border-radius: 1.9px;
+      background-color: color(text-pink);
+      border: none;
+      font-family: $primary-font;
+      font-size: 14px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 1200px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  .sva-prava-zadrzava {
+    width: 547px;
+    height: 17px;
+    padding-top: 56px;
+    padding-bottom: 28px;
+    font-family: $secundary-font;
+    font-size: 12px;
+    color: #656565;
+
+    @media (max-width: 1200px) {
+      padding-top: 2rem;
+    }
+  }
+
+  .kriva-footer-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+  }
+
+  .kriva-footer-2 {
+    position: absolute;
+    bottom:0;
+    right: 366px;
+    z-index: -10;
+  }
+
+  .footer-krofna {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index: -10;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 2rem;
+
+    .logo-footer {
+      padding-left: 1rem;
+      width: 100%;
+    }
+
+    .footer-nav {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2rem;
+    }
+
+    .prijava-za-posao {
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+
+    .sva-prava-zadrzava {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-krofna {
+      display: none;
+    }
+    
+    .kriva-footer-2 {
+      right: 0;
+    }
+  }
 }

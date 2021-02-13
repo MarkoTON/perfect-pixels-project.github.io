@@ -22,7 +22,7 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto main-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Početna <span class="sr-only">(current)</span></a>
             </li>
@@ -134,11 +134,6 @@
             </div>
           </div>
         </div>
-
-
-
-
-
   
       </div><!-- container -->
     </section>
@@ -174,7 +169,7 @@
             </div>
             <div class="podrzali">
               <h4>PODRŽALI SMO</h4>
-              <div class="d-flex">
+              <div class="d-flex flex-wrap">
                 <div class="box box-1"></div>
                 <div class="box box-2"></div>
                 <div class="box box-3"></div>
@@ -189,7 +184,7 @@
           <div class="d-flex w-100 info-bottom">
             <div class="reference">
               <h4>REFERENCE</h4>
-              <div class="d-flex">
+              <div class="d-flex flex-wrap">
                 <div class="box box-9"></div>
                 <div class="box box-10"></div>
                 <div class="box box-11"></div>
@@ -207,55 +202,67 @@
       </div>
     </section>
 
-    <footer>
-      <div class="logo-footer">
-        <img src="./img/group-11.png" alt="Slatkoteka Logo">
-        <p>Prva specijalizovana prodavnica krofni i kronata u Srbiji. </p>
-        <div class="drustvene-mreze">
-          <a href="#"><img src="./img/b.png" alt="..."></a>
-          <a href="#"><img src="./img/fb.png" alt="Facebook"></a>
-          <a href="#"><img src="./img/in.png" alt="Instagram"></a>
-        </div>
+    <footer class="d-flex">
+      <div class="container">
+        <div class="row">
+
+          <div class="logo-footer">
+            <img src="./img/group-11.png" alt="Slatkoteka Logo">
+            <p>Prva specijalizovana prodavnica krofni i kronata u Srbiji. </p>
+            <div class="drustvene-mreze d-flex">
+              <a href="#"><img src="./img/b.png" class="w-100 h-100" alt="..."></a>
+              <a href="#"><img src="./img/fb.png" class="w-100 h-100" alt="Facebook"></a>
+              <a href="#"><img src="./img/in.png" class="w-100 h-100" alt="Instagram"></a>
+            </div>
+          </div>
+    
+          <nav class="footer-nav d-flex">
+            <ul class="nav flex-column">
+              <li class="nav-item active">
+                <a class="nav-link font-weight-bold text-uppercase" href="#">Početna <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" href="#">Poručivanje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" href="#">Dostava</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" href="#">Lokacije</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" href="#">Pokloni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" href="#">Info Pult</a>
+              </li>
+            </ul>
+
+            <ul class="footer-info-links nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Kako funkcioniše poručivanje</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Ketering i dostava</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Naručivanje velikih količina</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sezonske akcije krofni i kronata</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kako biramo sastojke za krofne</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Još neki korisni link ovde</a></li>
+            </ul>
+          </nav>
+    
+    
+          <div class="prijava-za-posao ">
+            <h5>Postani deo Slatkoteka tima</h5>
+            <button>PRIJAVA ZA POSAO</button>
+          </div>
+    
+          <p class="sva-prava-zadrzava">© 2017-2020 Slatkoteka | Sva prava zadržana | dev, dizajn, marketing: Avokado.rs</p>
+        </div><!-- row -->
+      </div><!-- container -->
+
+      <div class="footer-krofna">
+        <img src="./img/footer-krofna.png" alt="Krofna">
       </div>
-
-      <nav class="footer-nav d-inline-block">
-        <ul class="navbar-nav d-inline-block">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Početna <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Poručivanje</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dostava</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Lokacije</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pokloni</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Info Pult</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="footer-info-links">
-        <li><a href="#">Kako funkcioniše poručivanje</a></li>
-        <li><a href="#">Ketering i dostava</a></li>
-        <li><a href="#">Naručivanje velikih količina</a></li>
-        <li><a href="#">Sezonske akcije krofni i kronata</a></li>
-        <li><a href="#">Kako biramo sastojke za krofne</a></li>
-        <li><a href="#">Još neki korisni link ovde</a></li>
-      </ul>
-
-      <div class="prijava-za-posao">
-        <h5>Postani deo Slatkoteka tima</h5>
-        <button>PRIJAVA ZA POSAO</button>
-      </div>
-
-      <p>© 2017-2020 Slatkoteka | Sva prava zadržana | dev, dizajn, marketing: Avokado.rs</p>
+      <img src="./img/kriva-footer-1.png" alt="" class="kriva-footer-1">
+      <img src="./img/kriva-footer-2.png" alt="" class="kriva-footer-2">
     </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

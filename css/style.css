@@ -5,17 +5,37 @@
   padding: 0;
 }
 
-nav {
+nav.navbar {
   height: 70px;
   background: #ffebf2;
   margin: 0 0 78px;
   padding: 18px 151px 17px 150px;
 }
 
-nav a {
+nav.navbar .main-nav {
+  background-color: rgba(255, 235, 242, 0.95);
+  padding: 1rem;
+}
+
+nav.navbar a {
   font-family: "Secular One", sans-serif;
   font-size: 15px;
   letter-spacing: 0.05px;
+}
+
+@media (max-width: 576px) {
+  nav.navbar .logo-nav {
+    padding-left: 1rem;
+  }
+  nav.navbar button {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.navbar {
+    padding: 18px 0px 17px 0px;
+  }
 }
 
 section.lokacija {
@@ -45,6 +65,31 @@ section.lokacija .container .paginacia {
 section.lokacija .container .paginacia span {
   font-family: "Varela Round", sans-serif;
   color: #999999;
+}
+
+@media (max-width: 576px) {
+  section.lokacija {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section.lokacija {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.lokacija .container p {
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1441px) {
+  section.lokacija {
+    background-position: center center;
+  }
 }
 
 .card-location {
@@ -193,6 +238,13 @@ section.lokacija .container .paginacia span {
   }
 }
 
+@media (max-width: 1024px) {
+  .card-location {
+    margin-top: 2.5rem;
+    padding: 0 1rem;
+  }
+}
+
 .uskoro-nbg {
   width: 100%;
   height: auto;
@@ -225,12 +277,18 @@ section.lokacija .container .paginacia span {
 .uskoro-nbg .uskoro-text {
   width: 341px;
   height: 208px;
-  margin-top: 121px;
+  padding-top: 121px;
   font-family: "Secular One", sans-serif;
   font-size: 45px;
   line-height: 1.22;
   letter-spacing: 0.15px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .uskoro-nbg .uskoro-text {
+    padding-top: 1.5rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -279,6 +337,12 @@ section.lokacija .container .paginacia span {
   color: #f650a0;
 }
 
+@media (max-width: 576px) {
+  .slatkoteka-drugi-gradovi {
+    padding: 0 1rem;
+  }
+}
+
 .nagrade-informacije {
   margin-top: 66px;
   margin-bottom: 41px;
@@ -288,6 +352,7 @@ section.lokacija .container .paginacia span {
   background: #d8d8d8;
   height: 42px;
   margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .nagrade-informacije .box:last-child {
@@ -296,6 +361,7 @@ section.lokacija .container .paginacia span {
 
 .nagrade-informacije .info-top {
   padding-bottom: 57px;
+  width: 200px;
 }
 
 .nagrade-informacije .info-top h4 {
@@ -307,11 +373,15 @@ section.lokacija .container .paginacia span {
 }
 
 .nagrade-informacije .info-top .nagrade {
-  width: 200px;
+  min-width: 200px;
 }
 
 .nagrade-informacije .info-top .nagrade .top-50 {
   padding-right: 19px;
+}
+
+.nagrade-informacije .info-top .podrzali {
+  padding-left: 30px;
 }
 
 .nagrade-informacije .info-top .podrzali .box-1 {
@@ -392,7 +462,187 @@ section.lokacija .container .paginacia span {
   font-weight: normal;
 }
 
+@media (max-width: 576px) {
+  .nagrade-informacije {
+    padding: 0 1rem;
+  }
+  .nagrade-informacije .info-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nagrade-informacije .info-top .podrzali {
+    padding-left: 0px;
+    padding-top: 1.5rem;
+  }
+  .nagrade-informacije .info-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
   background-color: #ffebf2;
+  position: relative;
+  padding-top: 67px;
+}
+
+footer .logo-footer {
+  width: 272px;
+}
+
+footer .logo-footer img {
+  width: 176px;
+  height: 48px;
+}
+
+footer .logo-footer p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding: 17px 0px;
+}
+
+footer .logo-footer .drustvene-mreze a {
+  padding-right: 20px;
+}
+
+footer .logo-footer .drustvene-mreze a:last-child {
+  padding-right: 0px;
+}
+
+footer .footer-nav {
+  padding-left: 61px;
+}
+
+footer .footer-nav ul li a {
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  color: #000;
+  letter-spacing: 0.05px;
+  margin-bottom: 0;
+  padding: 0px;
+  padding-bottom: 8px;
+}
+
+footer .footer-nav .footer-info-links {
+  padding-left: 52px;
+  padding-right: 80px;
+}
+
+footer .footer-nav .footer-info-links ul li a {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-nav .footer-info-links {
+    padding-right: 0px;
+  }
+}
+
+footer .prijava-za-posao {
+  width: 189px;
+}
+
+footer .prijava-za-posao h5 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  color: #f650a0;
+}
+
+footer .prijava-za-posao button {
+  width: 152px;
+  height: 30px;
+  padding: 5px 6px 5px 7px;
+  border-radius: 1.9px;
+  background-color: #f650a0;
+  border: none;
+  font-family: "Secular One", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  footer .prijava-za-posao {
+    display: block;
+    width: 100%;
+  }
+}
+
+footer .sva-prava-zadrzava {
+  width: 547px;
+  height: 17px;
+  padding-top: 56px;
+  padding-bottom: 28px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  color: #656565;
+}
+
+@media (max-width: 1200px) {
+  footer .sva-prava-zadrzava {
+    padding-top: 2rem;
+  }
+}
+
+footer .kriva-footer-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+footer .kriva-footer-2 {
+  position: absolute;
+  bottom: 0;
+  right: 366px;
+  z-index: -10;
+}
+
+footer .footer-krofna {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding-top: 2rem;
+  }
+  footer .logo-footer {
+    padding-left: 1rem;
+    width: 100%;
+  }
+  footer .footer-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+  footer .prijava-za-posao {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  footer .sva-prava-zadrzava {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-krofna {
+    display: none;
+  }
+  footer .kriva-footer-2 {
+    right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
